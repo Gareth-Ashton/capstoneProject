@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+
+  <!-- Google Fonts Import -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&display=swap" rel="stylesheet" />
+
+  <!-- CSS Stylesheet Import -->
+  <link rel="stylesheet" href="css/style.css" type="text/css" />
+
+  <!-- Font Awesome Import -->
+  <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+    integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+
+  <title>PLANTED</title>
+</head>
+
+<body>
+  <!------- HEADER SECTION ------->
+  <header>
+
+    <nav>
+      <h2>PLANTED</h2>
+
+      <ul>
+        <a class="dropdown-toggle" href="#">Menu</a>
+        <ul class="dropdown">
+          <li><a href="index.html">Home</a></li>
+          <br>
+          <li><a href="#">About</a></li>
+          <br>
+          <li><a href="#">Contact Us</a></li>
+        </ul>
+
+
+
+        <li class="cart">
+          <a href="cart.html">
+            <i class="fas fa-shopping-cart"></i>Cart <span>0</span>
+          </a>
+        </li>
+      </ul>
+
+    </nav>
+  </header>
+  <!------- END OF HEADER SECTION ------->
+
+  <!------- PRODUCT SECTION ------->
+  <h2 class="title">Featured Products</h2>
+
+
+  <!--MONSTERA PLANT-->
+  <section class="container content-section">
+    <div class="shop-items">
+      <div class="shop-item">
+        <span class="shop-item-title">Monstera</span>
+        <a href="/categories/monstera.html"><img class="shop-item-image" src="img/Monstera.jpg"></a>
+        <div class="shop-item-details">
+          <span class="shop-item-price">R10.00</span>
+          <button onclick="addToCartClicked()" class="btn btn-primary shop-item-button" type="button">ADD TO
+            CART</button>
+        </div>
+      </div>
+      <div class="shop-item">
+        <span class="shop-item-title">Eucalyptus</span>
+        <a href="/categories/eucalyptus.html"><img class="shop-item-image" src="img/Eucalyptus.jpg"></a>
+        <div class="shop-item-details">
+          <span class="shop-item-price">R20.00</span>
+          <button onclick="addToCartClicked()" class="btn btn-primary shop-item-button" type="button">ADD TO
+            CART</button>
+        </div>
+      </div>
+      <div class="shop-item">
+        <span class="shop-item-title">Succulent</span>
+        <a href="/categories/succulent.html"><img class="shop-item-image" src="img/Succulent.jpg"></a>
+        <div class="shop-item-details">
+          <span class="shop-item-price">R30.00</span>
+          <button onclick="addToCartClicked()" class="btn btn-primary shop-item-button" type="button">ADD TO
+            CART</button>
+        </div>
+      </div>
+      <div class="shop-item">
+        <span class="shop-item-title">Palm</span>
+        <a href="/categories/palm.html"><img class="shop-item-image" src="img/Palm.jpg"></a>
+        <div class="shop-item-details">
+          <span class="shop-item-price">R40.00</span>
+          <button onclick="addToCartClicked()" class="btn btn-primary shop-item-button" type="button">ADD TO
+            CART</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+
+  <script src="js/finalScript.js"></script>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+  <!--JQUERY SCRIPT-->
+
+  <script>
+    //Fading images when clicked on in their profiles
+    $("img").click(function () {
+      $("img").fadeOut("slow");
+    });
+
+    // Moving the Featured Products button to the right
+    $("h2").click(function () {
+      $(".title").animate({
+        left: '150px'
+      });
+    });
+
+    // DROP DOWN MENU FOR MENU SECTION
+    $(function () { 
+      $('.dropdown-toggle').click(function () {
+        $(this).next('.dropdown').slideToggle();
+      });
+    });
+  </script>
+</body>
+
+</html>

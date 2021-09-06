@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+
+  <!-- Google Fonts Import -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&display=swap" rel="stylesheet" />
+
+  <!-- CSS Stylesheet Import -->
+  <link rel="stylesheet" href="/css/categories.css" type="text/css" />
+
+  <!-- Font Awesome Import -->
+  <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+    integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+
+  <title>PLANTED | Monstera</title>
+</head>
+
+<body>
+  <!------- HEADER SECTION ------->
+  <header>
+    <div class="overlay"></div>
+    <nav>
+      <h2>PLANTED</h2>
+      <ul>
+        <li><a href="/index.html">Home</a></li>
+        <li><a href="#">About</a></li>
+        <li class="cart">
+          <a href="cart.html">
+            <i class="fas fa-shopping-cart"></i>Cart <span>0</span>
+          </a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+  <!------- END OF HEADER SECTION ------->
+
+  <!------- PRODUCT SECTION ------->
+  <h2 class="title">Featured Item</h2>
+
+
+  <!--MONSTERA PLANT-->
+  <section class="container content-section">
+    <div class="shop-items">
+      <div class="shop-item">
+        <span class="shop-item-title">Monstera</span>
+        <img class="shop-item-image" src="/img/Monstera.jpg">
+        <div class="shop-item-details">
+          <span class="shop-item-price">R10.00</span>
+          <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+
+  <script src="/js/finalScript.js"></script>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+  <!--JQUERY SCRIPT-->
+  <script>
+    //Fading images when clicked on
+    $("img").click(function () {
+      $("img").fadeOut("slow");
+    });
+
+
+  </script>
+</body>
+
+</html>
