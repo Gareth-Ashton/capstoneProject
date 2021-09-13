@@ -11,7 +11,7 @@ The installation process is fairly simple:
 
 * Navigate to the **MAIN** project folder
 * Switch branches from the Main to the Master branch
-* Click the green button with the word # CODE # in it
+* Click the green button with the word **CODE** in it
 * Select **DOWNLOAD ZIP**
 * Save the project wherever you see fit
 * Unzip the project by double clicking on the zip file
